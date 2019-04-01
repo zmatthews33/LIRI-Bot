@@ -1,5 +1,29 @@
-require("dotenv").config();
+var getSpotify = require("./spotify");
 
-var keys = require("./keys.js");
+var inputs = process.argv;
 
-var spotify = new Spotify(keys.spotify);
+function liriSearch(searchType, searchData) {
+  switch (searchType) {
+    // case "concert-this":
+    //   getConcert(searchData);
+    //   break;
+
+    case "spotify-this-song":
+      getSpotify(searchData);
+      break;
+
+    // case "movie-this":
+    //   getMovie(searchData);
+    //   break;
+
+    // case "do-what-it-says":
+    //   doWhatItSays(liriSearch);
+    //   break;
+
+    default:
+      console.log("Please Try Again");
+      break;
+  }
+}
+
+liriSearch(inputs[2], inputs.slice(3).join("+"));
