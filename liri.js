@@ -1,18 +1,19 @@
 var getSpotify = require("./spotify");
+var getConcert = require("./concert");
 
 var inputs = process.argv;
 
 function liriSearch(searchType, searchData) {
   switch (searchType) {
-    // case "concert-this":
-    //   getConcert(searchData);
-    //   break;
+    case "concert-this":
+      getConcert(searchData);
+      break;
 
     case "spotify-this-song":
       getSpotify(searchData);
       break;
 
-    // case "movie-this":
+    //  case "movie-this":
     //   getMovie(searchData);
     //   break;
 
