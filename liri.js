@@ -1,5 +1,7 @@
 var getSpotify = require("./spotify");
 var getConcert = require("./concert");
+var getMovie = require("./movie");
+// var doWhatItSays = require("do-what-it-says");
 
 var inputs = process.argv;
 
@@ -13,9 +15,9 @@ function liriSearch(searchType, searchData) {
       getSpotify(searchData);
       break;
 
-    //  case "movie-this":
-    //   getMovie(searchData);
-    //   break;
+    case "movie-this":
+      getMovie(searchData);
+      break;
 
     // case "do-what-it-says":
     //   doWhatItSays(liriSearch);
