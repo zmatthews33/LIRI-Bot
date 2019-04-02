@@ -7,7 +7,7 @@ This CLI application will fetch Spotify info, Concert info, Movie info and more 
 
 View a demo 
 ----
-![LIRI Demo](github.com/zmatthews33/LIRI-Bot/master/liri.png)
+https://github.com/zmatthews33/LIRI-Bot
 
 
 Requirements
