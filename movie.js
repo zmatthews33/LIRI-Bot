@@ -18,13 +18,13 @@ function getMovie(movieName, notFound) {
       var movie = resp.data;
 
       if (movie.Response === "True") {
-        var myRating = movie.Ratings.filter(
-          rating => rating.Source === "Internet movieie Database"
+        var imdbRating = movie.Ratings.filter(
+          rating => rating.Source === "Internet Movie Database"
         );
 
         console.log("Title: " + movie.Title);
         console.log("Year: " + movie.Year);
-        console.log("IMDB Rating: " + movie.myRating); //fix
+        console.log("IMDB Rating: " + imdbRating[0].Value);
         console.log("Country Produced: " + movie.Country);
         console.log("Language: " + movie.Language);
         console.log("Plot: " + movie.Plot);
