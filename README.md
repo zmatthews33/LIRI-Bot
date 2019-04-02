@@ -12,9 +12,11 @@ https://youtu.be/Cnn_KPB61i0
 
 Requirements
 -----
-Node
-NPM
-A command line interface (like Terminal or Bash)
+-Node
+
+-NPM
+
+-A command line interface (like Terminal or Bash)
 
 Installation
 ----
@@ -33,22 +35,22 @@ All dependencies should now be installed and LIRI is ready for use
 
 Using LIRI
 ----
-1. Get a song listing from Spotify
+-1. Get a song listing from Spotify
 node liri spotify-this-song [song here]
 
 LIRI returns a list of songs from Spotify. Results are from all artists with song titles matching your query, along with details like album, Spotify preview link and more.
 
-2. Get a concert listing
+-2. Get a concert listing
 node liri concert-this [band here]
 
 Using the Bands In Town API, LIRI returns a list of upcoming concerts from bandsintown.com based on the user input.
 
-3. Get movie info
+-3. Get movie info
 node liri movie-this [movie here]
 
 LIRI returns details from OMDB about the movie you've chosen.
 
-4. Do what it says
+-4. Do what it says
 node liri do-what-it-says
 
 Runs a query based on contents .txt in the repo
